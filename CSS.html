@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+  <title>CSS</title>
+     <link rel="stylesheet" type="text/css" href="wt.css"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg2">
+     
+     <img class="element1" src="giphy3.gif" alt="Not found"  />
+	 <h1 class="h2">CSS</h1>
+	 <div class="div" >
+	 <h3 class="org3">INTRODUCTION</h3>
+	 <p><pre class="notes1">
+      XHTML style sheets are called cascading style sheets because they can be defined at three different levels to specify
+      the style of a document. Lower level style sheets can override higher level style sheets, so the style of the content of
+      a tag is determined, in effect, through a cascade of style-sheet applications.
+     <h3 class="org4">LEVELS OF STYLE SHEETS</h3>
+      The three levels of style sheets, in order from lowest level to highest level, are inline, document level, and external.
+      Inline style sheets apply to the content of a single XHTML element.
+      Document-level style sheets apply to the whole body of a document.
+      External style sheets can apply to the bodies of any number of documents.
+      Inline style sheets have precedence over document style sheets, which have precedence over external style sheets.
+      Inline style specifications appear within the opening tag and apply only to the content of that tag.
+      Document-level style specifications appear in the document head section and apply to the entire body of the document.
+      External style sheets stored separately and are referenced in all documents that use them.
+      External style sheets are written as text files with the MIME type text/css.
+      They can be stored on any computer on the Web. The browser fetches external style sheets just as it fetches documents.
+	 </pre></p>
+	 </div>
+     <div class="box6">
+	  <h3 class="org5"><center>PRACTICE PROGRAMS</center></h3>
+	  <form action="" class="org1">
+	  <center><select name="Programs" id="Programs">
+	  <option value="nothing" selected="selected">Select a program</option>
+      <option value="NOTES\Span.pdf"><center>Usage of span tag</center></option>
+	  <option value="NOTES\Div.pdf"><center>Usage of div tag</center></a></option>
+	  </select></center>
+	  </form>
+	 </div>
+	 <script type="text/javascript">
+	     var urlMenu = document.getElementById('Programs');
+		 urlMenu.onchange = function() {
+		    var userOption = this.options[this.selectedIndex];
+			if(userOption.value != "nothing") {
+			    window.open(userOption.value,"XHTML Practice Programs","");
+				}
+		    }
+     </script>
+     <div class="box7">	 
+	  <h3 class="org5"><center>COMPLETE CSS NOTES</center></h3>
+	  <a class="org5" href="NOTES\CSS NOTES.pdf"><center>Click Here</center></a>	  
+	 </div>
+	 <a href="wtnotes.html" class="HOME">HOME</a> 
+	 <a href="XML.html" class="NEXT">NEXT</a>
+</body>
+</html>	 
+		   

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login and Registration Form</title>
+      <link rel="stylesheet" href="login.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
+	  <script type= "text/javascript">
+		function validate_signup(event) {
+			var mail = document.getElementById("emailId").value;
+			var pwd = document.getElementById("password").value;
+			var pwd1 = document.getElementById("password1").value;
+			var regx = /^(\d{1}[adtu]{2}\d{2}[a-z]{2}\d{3}\.[a-z]{2}@drait.edu.in)$/
+			
+			if(regx.test(mail)){
+				alert("Email Id matched");
+				if(pwd != pwd1){
+					alert("Your password didn't match");
+					event.preventDefault();
+					return false
+				}else {
+					document.forms["form"].submit();
+					return true
+				}
+			}else {
+				alert("Invalid Email Id");
+				event.preventDefault();
+			}
+		}
+		function validate_login(event) {
+			var mail = document.getElementById("userId").value;
+			var regx = /^(\d{1}[adtu]{2}\d{2}[a-z]{2}\d{3}\.[a-z]{2}@drait.edu.in)$/
+			
+			if(regx.test(mail)){
+				alert("Email Id matched");
+				document.forms["form"].submit();
+				return true
+			}else {
+				alert("Invalid Email Id");
+				event.preventDefault();
+			}
+		}
+	</script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Login Form
+            </div>
+            <div class="title signup">
+               Signup Form
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="login1.php" method="POST" class="login">
+                  <div class="field">
+                     <input type="text" id="userId" placeholder="Enter your UserId" name="username1" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Enter password" name="password1" size="10" required>
+                  </div>
+                  <div class="pass-link">
+                     <a href="pwd.html">Forgot password?</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" onclick="validate_login(event)" value="Login">
+                  </div>
+                  <div class="signup-link">
+                     Not a member? <a href="">Signup now</a>
+                  </div>
+               </form>
+               <form action="login.php" method="POST" class="signup">
+                  <div class="field">
+                     <input type="text" id="emailId" name="username" placeholder="Enter College Email Id" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" id="password" name="password" placeholder="Enter your password" size="10" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" id="password1" name="password2" placeholder="Confirm password" size="10" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+					 <input type="submit" onclick="validate_signup(event)" value="Signup">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+		 
+		 
+      </script>
+   </body>
+</html>

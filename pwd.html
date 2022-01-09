@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Forgot Password?</title>
+      <link rel="stylesheet" href="login.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+	<body>
+	<script type="text/javascript">
+		function validate_userId(event) {
+			var mail = document.getElementById("userId1").value;
+			var regx = /^(\d{1}[adtu]{2}\d{2}[a-z]{2}\d{3}\.[a-z]{2}@drait.edu.in)$/
+			
+			if(regx.test(mail)){
+				alert("User Id matched");
+				document.forms["form"].submit();
+				return true
+			}else {
+				alert("Invalid User Id");
+				event.preventDefault();
+			}
+		}
+	</script>
+    <div class="wrapper">
+        <div class="form-container">
+			<div class="form-inner">
+				<form action="login2.php" method="POST" class="signup">
+					<div class="field">
+						<input type="text" id="userId1" name="username2" placeholder="Enter your UserId" required>
+					</div>
+					<div class="field btn">
+					<div class="btn-layer"></div>
+						<input type="submit" onclick="validate_userId(event)" value="Know Password">
+					</div>
+				</form>
+			</div>
+        </div>
+    </div>
+	</body>
+</html>

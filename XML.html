@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+  <title>XML</title>
+     <link rel="stylesheet" type="text/css" href="wt.css"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg3">
+     
+     <img class="element2" src="xml1.gif" alt="Not found" />
+	 <h1 class="h3">XML</h1>
+	 <div class="div">
+     <h3 class="org6"><center>XML: eXtensible Markup Language</center></h3>
+	 <p><pre class="notes2">
+	  XML stands for eXtensible Markup Language
+	  XML is a markup language much like HTML
+	  XML was designed to store and transport data
+	  XML was designed to be self-descriptive
+	  XML is a W3C Recommendation
+	 <h3 class="org6"><center>SYNTAX OF XML</center></h3>
+          XML imposes two distinct levels of syntax:
+	  There is a general low level syntax that is appreciable on all XML documents
+	  The other syntactic level is specified by DTD (Document Type Definition) or XML schemas.
+          The DTDs and XML schemas specify a set of tag and attribute that can appear in a particular document or
+	  collection of documents.
+	  They also specify the order of occurrence in the document.
+	  The XML documents consists of data elements which form the statements of XML document.
+	  The XML document might also consists of markup declaration, which act as instructions to the XML parser
+	  All XML documents begin with an XML declaration. This declaration identifies that the document isa XML
+	  document and also specifies version number of XML standard.
+	  It also specifies encoding standard.
+	  Comments in XML is similar to HTML
+	  XML names are used to name elements and attributes.
+	  XML names are case-sensitive.
+	  There is no limitation on the length of the names.
+	  All XML document contains a single root element whose opening tag appears on first line of the code
+	  All other tags must be nested inside the root element
+	  As in case of XHTML, XML tags can also have attributes
+	  The values for the attributes must be in single or double quotation.
+	 </pre></p>
+	 <h3 class="org6"><center>Differenes between HTML and XML</center></h3>
+	 <p class="diff"><img src="HTMLvsXML.jpeg" alt="Image not found!"style="width: 800px; height: 500px;"/></p>
+     </div>
+     <div class="box6">
+	  <h3 class="org6"><center>PRACTICE PROGRAMS</center></h3>
+	  <form action="" class="org7">
+	  <center><select name="Programs" id="Programs">
+	  <option value="nothing" selected="selected">Select a program</option>
+      <option value="NOTES\To store Student info.pdf"><center>To Store Student Information</center></option>
+	  </select></center>
+	  </form>
+	 </div>
+	 <script type="text/javascript">
+	     var urlMenu = document.getElementById('Programs');
+		 urlMenu.onchange = function() {
+		    var userOption = this.options[this.selectedIndex];
+			if(userOption.value != "nothing") {
+			    window.open(userOption.value,"XML Practice Programs","");
+				}
+		    }
+     </script>
+     <div class="box7">	 
+	  <h3 class="org6"><center>COMPLETE XML NOTES</center></h3>
+	  <a class="org8" href="NOTES\XML NOTES.pdf"><center>Click Here</center></a>	  
+	 </div>
+	 <a href="wtnotes.html" class="HOME">HOME</a> 
+	 <a href="JS.html" class="NEXT">NEXT</a>
+</body>
+</html>

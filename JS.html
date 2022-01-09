@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+  <title>JAVASCRIPT</title>
+     <link rel="stylesheet" type="text/css" href="wt.css"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg4">
+     <img class="element3" src="js.gif" alt="Not found" />
+	 <h1 class="h4" >JAVASCRIPT</h1>
+	 <div class="div" >
+	 <h3 class="org9"><center>OVERVIEW OF JAVASCRIPT</center></h3>
+	 <p><pre class="notes3">
+	 JavaScript, which was developed by Netscape, was originally named Mocha but soon was renamed LiveScript.
+         In late 1995 LiveScript became a joint venture of Netscape and Sun Microsystems, and its name again was changed, this time to JavaScript.
+	 A language standard for JavaScript was developed in the late 1990s by the European Computer
+	 Manufacturers Association (ECMA) as ECMA-262.
+	 The official name of the standard language is ECMAScript.
+	 JavaScript can be divided into three parts: the core, client side, and serverside.
+	 The core is the heart of the language, including its operators, expressions, statements, and subprograms.
+	 Client-side JavaScript is a collection of objects that support the control of a browser and interactions with users.
+	 Server-side JavaScript is a collection of objects that make the language useful on a Web server.
+	 <h3 class="org9"><center>JAVASCRIPT OBJECTS</center></h3>
+         In JavaScript, objects are collections of properties, which correspond to the members of classes in Java and C++.
+	 Each property is either a data property or a function or method property.
+	 Data properties appear in two categories: primitive values and references to other objects.
+	 JavaScript uses non-object types for some of its simplest types; these non-object types are called
+	 primitives.
+	 Primitives are used because they often can be implemented directly in hardware, resulting in faster operations on their values.
+	 All objects in a JavaScript program are indirectly accessed through variables.
+	 </pre></p>
+	 <h3 class="org9"><center>Differenes between JAVASCRIPT and JAVA</center></h3>
+	 <p class="diff"><img src="JavavsJS.jpeg" alt="Image not found!" style="width: 800px; height: 250px;"/></p>
+     </div>
+     <div class="box6">
+	  <h3 class="org9"><center>PRACTICE PROGRAMS</center></h3>
+	  <form action="" class="org10">
+	  <center><select name="Programs" id="Programs">
+	  <option value="nothing" selected="selected">Select a program</option>
+      <option value="NOTES\Addnumandstring.pdf"><center>To add number and string</center></option>
+	  <option value="NOTES\Check valid Input.pdf"><center>To check valid input</center></a></option>
+	  <option value="NOTES\find the length of the string.pdf"><center>Find the length of the string</center></a></option>
+	  <option value="NOTES\JS'+='Operator.pdf"><center>JavaScript'+='Operator</center></a></option>
+	  <option value="NOTES\JSinBodyec.pdf"><center>JavaScript in Body section</center></a></option>
+	  <option value="NOTES\JSinHeadsec.pdf"><center>JavaScript in Head section</center></a></option>
+	  <option value="NOTES\JS'-'Operator.pdf"><center>JavaScript'-'Operator</center></a></option>
+	  <option value="NOTES\Stacking of Paragraphs.pdf"><center>Stacking of Paragraphs</center></a></option>
+	  <option value="NOTES\Fibonacci Series.pdf"><center>Fibonacci Series</center></a></option>
+	  <option value="NOTES\Programs on JavaScript using functions.pdf"><center>JavaScript functions</center></a></option>
+	  <option value="NOTES\to display date using JS function.pdf"><center>To display date using JS function</center></a></option>
+	  <option value="NOTES\to convert the string to Uppercase.pdf"><center>To convert the string to Uppercase</center></a></option>
+      <option value="NOTES\to search for a string and display the matches.pdf"><center>To search for a string </center></a></option>	 
+	 </select></center>
+	  </form>
+	 </div>
+	 <script type="text/javascript">
+	     var urlMenu = document.getElementById('Programs');
+		 urlMenu.onchange = function() {
+		    var userOption = this.options[this.selectedIndex];
+			if(userOption.value != "nothing") {
+			    window.open(userOption.value,"JAVASCRIPT Practice Programs","");
+				}
+		    }
+     </script>
+     <div class="box7">	 
+	  <h3 class="org9"><center>COMPLETE JS NOTES</center></h3>
+	  <a class="org11" href="NOTES\JAVASCRIPT NOTES.pdf"><center>Click Here</center></a>	  
+	 </div>
+	<a href="wtnotes.html" class="HOME">HOME</a>  
+	 <a href="PHP.html" class="NEXT">NEXT</a>
+</body>
+</html>

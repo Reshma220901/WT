@@ -1,0 +1,8 @@
+body
+{
+    background-image: linear-gradient(to right, rgb(175, 138, 221) , rgb(241, 239, 243));
+    border:dashed 1.8px #483D8B;
+    margin: 200px 500px 300px 500px;
+    padding:40px 0px 20px 120px;
+    
+}
